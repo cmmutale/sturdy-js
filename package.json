@@ -1,12 +1,20 @@
 {
   "name": "sturdy-js",
+  "bin": {
+    "sturdy": "./dist/index.js"
+  },
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "link-cli": "pnpm unlink --global sturdy-js && pnpm link --global",
+    "dev": "tsc -w"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
 }
